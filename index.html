@@ -1,84 +1,87 @@
 <!DOCTYPE html>
-<html> <!-- Falta de atributo lang="ca" (Error 3.1.1) -->
+<html lang="ca"><!-- Falta de atributo lang="ca" -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guarderia per a plantes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guarderia per a plantes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo -->
-    <header>
-        <img src="icono.png" class="logo"> <!-- Falta de alt en la imagen (Error 1.1) -->
-        <nav>
-            <ul>
-                <li><a href="#informacio">Promocion</a></li>
-                <li><a href="#promocio">Oferta especial</a></li> <!-- Nombre confuso (Error 2.4.1) -->
-                <li><a href="#ofertes">Informacion</a></li>
-                <li><a href="#preus">Contacto</a></li>
-                <li><a href="#contacte">Preus</a></li> <!-- ID incorrecto (Error 2.4.2) -->
-            </ul>
-        </nav>
-    </header>
+  <!-- Logo -->
+  <header>
+    <img src="icono.png" class="logo"> <!-- Falta de alt en la imagen -->
+    <nav>
+      <ul>
+        <li><a href="#informacio">Promocion</a></li>
+        <li><a href="#promocio">Oferta especial</a></li> <!-- Nombre confuso -->
+        <li><a href="#ofertes">Informacion</a></li>
+        <li><a href="#preus">Contacto</a></li> <!-- ID incorrecto -->
+        <li><a href="#contacte">Preus</a></li> <!-- ID incorrecto -->
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Sección de información -->
-    <section id="informacio">
-        <h1>Galeria d'imatges</h1> <!-- Uso incorrecto de <h1> dentro de una sección secundaria (Error 1.3.1) -->
-        <p>hola</p>
-        <p>no hay nada</p>
-    </section>
+  <!-- Sección de información -->
+  <section id="informacio">
+    <h1>Galeria d'imatges</h1> <!-- Uso incorrecto de <h1> -->
+    <p>hola</p>
+    <p>no hay nada</p>
+  </section>
 
-    <!-- Sección de galería -->
-    <section id="galeria">
-        <h2>Galeria d'imatges</h2>
-        <div class="galeria-container">
-            <img src="imagen1.jpg"> <!-- Sin alt (Error 1.1) -->
-            <img src="imagen2.jpg"> <!-- Sin alt (Error 1.1) -->
-            <img src="imagen3.jpg"> <!-- Sin alt (Error 1.1) -->
-        </div>
-    </section>
+  <!-- Sección de galería -->
+  <section id="galeria">
+    <h2>Galeria d'imatges</h2>
+    <div class="galeria-container">
+      <img src="imagen1.jpg"> <!-- Sin alt -->
+      <img src="imagen2.jpg"> <!-- Sin alt -->
+      <img src="imagen3.jpg"> <!-- Sin alt -->
+    </div>
+  </section>
 
-    <!-- Sección de promoción y ofertas -->
-    <section id="promocio">
-        <h2 style="color: red;">Promoció</h2> <!-- Uso solo de color para indicar énfasis (Error 1.4.1) -->
-        <p>Apunta't ara i obté un descompte del 10% en el primer mes de guarderia per a les teves plantes.</p>
-    </section>
+  <!-- Sección de promoción y ofertas -->
+  <section id="promocio">
+    <h2 style="color: red;">Promoció</h2> <!-- Uso solo de color -->
+    <p>Apunta't ara i obté un descompte del 10% en el primer mes de guarderia per a les teves plantes.</p>
+  </section>
 
-    <section id="ofertes">
-        <h2>Ofertes especials</h2>
-        <ul>
-            <li>Descompte del 5% per a més de 5 plantes</li>
-            <li>'e' vImaS.</li> <!-- Texto sin sentido (Error 3.1.2) -->
-        </ul>
-    </section>
+  <!-- Sección de ofertas -->
+  <section id="ofertes">
+    <h2>Ofertes especials</h2>
+    <ul>
+      <li>Descompte del 5% per a més de 5 plantes</li>
+      <li>'e' vImaS.</li> <!-- Texto sin sentido -->
+      <li><a href="#">Enlace roto</a></li> <!-- Enlace roto -->
+      <li><a href="#">Enlace sin descripción adecuada</a></li> <!-- Enlace sin descripción -->
+    </ul>
+  </section>
 
-    <!-- Formulario de contacto -->
-    <section id="contacte">
-        <h2>Contacte</h2>
-        <form>
-            <input type="text" id="nom" name="nom" required><br>
-            <LABEL for="email">Missatge:</label> <!-- Uso inconsistente de mayúsculas en LABEL (Error 4.1.1) -->
-            <label for="missatge">Missatge:</LABEL><br> <!-- Etiqueta mal cerrada (Error 4.1.2) -->
-            <input type="email" id="email" name="email" required><br>
-            <textarea id="missatge" name="missatge" required></textarea><br>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+  <!-- Formulario de contacto -->
+  <section id="contacte">
+    <h2>Contacte</h2>
+    <form>
+      <input type="text" id="nom" name="nom" required=""><br>
+      <label for="email">Missatge:</label> <!-- Uso inconsistente de mayúsculas -->
+      <label for="missatge">Missatge:</label><br> <!-- Etiqueta mal cerrada -->
+      <input type="email" id="email" name="email" required=""><br>
+      <textarea id="missatge" name="missatge" required=""></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-    <!-- Mapa del lloc -->
-    <section id="mapa">
-        <h2>On ens trobem?</h2>
-        <marquee>Atenció! Nova promoció disponible!</marquee> <!-- Uso de <marquee> (Error 2.3.1 - Animaciones peligrosas) -->
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+  <!-- Mapa del lloc -->
+  <section id="mapa">
+    <h2>On ens trobem?</h2>
+    <marquee>Atenció! Nova promoció disponible!</marquee> <!-- Uso de <marquee> -->
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
-    <!-- Información de contacto -->
-    <footer>
-        <p>Contacta'ns a: info@guarderiaplantes.com</p>
-        <p>Direcció: Carrer de les plantes, 123, Barcelona</p>
-    </footer>
+  <!-- Información de contacto -->
+  <footer>
+    <p>Contacta'ns a: info@guarderiaplantes.com</p>
+    <p>Direcció: Carrer de les plantes, 123, Barcelona</p>
+  </footer>
 </body>
 </html>
 
